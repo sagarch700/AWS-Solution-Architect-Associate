@@ -31,6 +31,17 @@ Throughput mode
   Bursting 50mnps + 100 mbps burst
   Elastic based on workloads
 
+EBS vs EFS: EBS
+  one instance except multi attach io1/io2
+  single AZ
+  io increases if the disk size increases
+  EFS
+    mounting 100s of instaces across several AZ
+    EFS share website files
+    only for Linux instances
+    EFS high price than EBS
+    
+
 
 
 
