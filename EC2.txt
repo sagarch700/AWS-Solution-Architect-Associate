@@ -1,1 +1,28 @@
+Billing and cost management to control your cost alarms based on your cost monitoring
+EC2 is infrastructure as a service
+EC2 components: EC2, EBS(storing data on vitual drives), ELB (load balancers), ASG (scaling using auto scaling groups), EC2 instance store.
+Bootstrapping means launching commands when a machine starts
+naming convention:- m5.2xlarge --> m instance class. 5 is generation. 2xlarge size of the instance class.
+Compute optimized --> compute intensive tasks, high performance cpu. starts with C. machine learning, bacth process, gaming servers.
+Memory optimized --> process large datasets in RAM. for databases. starts with R.
+Storage optimized --> high read and write to access large data sets. SQL/NoSQL, data warehousing, etc. sarts with I, D, H
+Security groups allow what is allowed into our EC2 instances. They only have allow rules. Security groups can reference using IP or other security groups.
+by default all inbound is blocked and all outound is allowed.
+only 5 elastic IP's per aws account. avoid elastic IP's as much as possible.
+EC2 placement groups:
+  Clusters --> low latency group in a single availability zone
+  spread --> spreads instances across underlying hardware(max 7 instances per hardware)
+  partition --> spreads instances across many different partitions (diff set of racks within an AZ) scales to 100 EC2 instances per group.
+ENI(Elastic network interface) --> is a virtual NIC card. you can add ENI to your EC2. you can move them from one EC2 to the other. they are bound to AZ. you get one by default when EC2 is made for the first time. Think of them as a server's virtual NIC card.
+
+EBS --> EBS volume is network drive you can attach to your instances while they run. data persists even after their termination. one instance at time. specific AZ. Define size and IOPS. Delete on termination is on for root EBS volume. we can control this though.
+
+AMI --> AMI is a customisation of EC2 instance. you add your own software, configuration, OS, etc. Faster boot/config time. Region Specific. can use public AMIs.
+
+EC2 instance store --> network drives with good but limited performance. if you need a high -performance hard disk, use instance store. you lose storage if it is stopped. used for cache/buffer/temporary content. Backup and replication is your responsibilities.
+
+
+
+  
+
 
