@@ -1,0 +1,3 @@
+Access keys needed for AWS CLI --> access AWS using CLI
+IAM roles are used by Services --> that is IAM role is attached to a service to access AWS resources
+IAM policies give user permission to AWS services
