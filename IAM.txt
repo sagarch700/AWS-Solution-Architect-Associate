@@ -1,3 +1,13 @@
 Access keys needed for AWS CLI --> access AWS using CLI
 IAM roles are used by Services --> that is IAM role is attached to a service to access AWS resources
 IAM policies give user permission to AWS services
+Groups can contain only users, not other groups
+user can belong to multiple groups
+JSON policies allowing users permissions to aws services. least priviliged principle: don't give more permissions they need.
+it is a global service.
+AWS management console --> GUI
+AWS CLI --> protected by access keys
+AWS SDK --> for code: access keys
+IAM roles: some AWS services will need to perform actions on our behalf.
+Roles are permissions to services --> not used by users, but aws services.
+IAM role attached to specific AWS services that will give them permissions to do stuff.
