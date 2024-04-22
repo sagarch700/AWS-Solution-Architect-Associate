@@ -23,7 +23,7 @@ EC2 instance store --> network drives with good but limited performance. if you 
 
 EBS multi-attach -> only available to io1 and io2 family with in a specific zone. upto 16 instance at a time.
 
-EFS(Elastic File system) --> managed NFS(network file system) that can be mounted on many EC2. Mutli AZ. HA/expensive 3x. scale automatically.
+EFS(Elastic File system) --> managed NFS(network file system) that can be mounted on many EC2. Mutli AZ. HA/expensive 3x. scale automatically. backup done automatically.
 performance modes
   general purpose --> latency sensitive use case (web servers, CMS, etc)
   Max I/O --> Higher Latency, throughput, highly parallel(big data, media processing)
