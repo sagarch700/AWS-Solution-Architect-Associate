@@ -21,6 +21,17 @@ AMI --> AMI is a customisation of EC2 instance. you add your own software, confi
 
 EC2 instance store --> network drives with good but limited performance. if you need a high -performance hard disk, use instance store. you lose storage if it is stopped. used for cache/buffer/temporary content. Backup and replication is your responsibilities.
 
+EBS multi-attach -> only available to io1 and io2 family with in a specific zone. upto 16 instance at a time.
+
+EFS(Elastic File system) --> managed NFS(network file system) that can be mounted on many EC2. Mutli AZ. HA/expensive 3x. scale automatically.
+performance modes
+  general purpose --> latency sensitive use case (web servers, CMS, etc)
+  Max I/O --> Higher Latency, throughput, highly parallel(big data, media processing)
+Throughput mode
+  Bursting 50mnps + 100 mbps burst
+  Elastic based on workloads
+
+
 
 
   
